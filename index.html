@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br" charset="utf-8">
 <head>
-    <title>Murylo Henrique Dev Fullstack</title>
+    <title>Murylo Henrique Dev</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=0.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
     <!-- CSS LANDING PAGE -->
@@ -26,8 +26,8 @@
                 </ul>
             </div>
         </div>
-        <div class="container-photo">
-            <div class="box-photo animated fadeIn"></div>
+        <div class="container-photo" id="scene">
+            <div class="box-photo animated fadeIn" data-depth="0.2"></div>
         </div>
         <div class="container-profile animated fadeIn">
             <div class="profile-name">Murylo Henrique</div>
@@ -51,6 +51,11 @@
             </ul>
         </div>
     </div>
-<iframe style="display:none; opacity: 0;" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/545943072&color=%2370ff00&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script>
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene);
+</script>
+<iframe style="display: none; opacity: 0;" width="1" height="1" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/545943072&color=%2352ff00&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 </body>
 </html>
