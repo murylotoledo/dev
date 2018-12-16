@@ -1,2 +1,2 @@
-# http://murylotoledo.github.io/dev/
+# http://murylotoledo.github.io
 Murylo
