@@ -1,0 +1,325 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+text-decoration:none;
+}
+a:hover {
+text-decoration:none;
+}
+a:active {
+text-decoration:none;
+}
+a:link {
+text-decoration:none;
+}
+ul {
+text-decoration:none;
+list-style: none;
+}
+ul:hover {
+text-decoration:none;
+}
+ul:active {
+text-decoration:none;
+}
+ul:link {
+text-decoration:none;
+}
+/*
+CSS BODY
+*/
+
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+}
+/*
+WRAPPER HOME
+*/
+.wrapper-home {
+    background: url("../img/bg-home.jpg") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.menu {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+.menu-inner {
+    width: 100%;
+    min-height: 80px;
+    padding: 0px 100px;
+    display: flex;
+    flex-direction: row;
+}
+.menu-logo {
+    width: 170px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-logo p {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu-ul {
+    width: calc(100% - 170px);
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.menu-ul a li {
+    color: #c0c4d6;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0px 10px;
+    padding: 0px 5px;
+    transition: .3s linear;
+    position: relative;
+    z-index: 1;
+}
+.menu-ul a li:hover {
+    color: white;
+}
+.menu-ul a li:before {
+    content: '';
+    background-color: #02d871;
+    width: 0;
+    height: 8px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    -webkit-transition: width .3s ease;
+    -o-transition: width .3s ease;
+    transition: width .3s ease;
+    z-index: -1;
+}
+.menu-ul a li:hover:before {
+    width: 100%;
+}
+.container-photo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-photo {
+    background: url("../img/profile.png") no-repeat center center;
+    background-size: 100%;
+    width: 300px;
+    height: 300px;
+}
+.container-profile {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    padding: 30px 0px;
+    animation-delay: .3s;
+}
+.profile-name {
+    color: #02d871;
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 400;
+}
+.profile-dev {
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 5px 0px;
+    text-align: center;
+    font-size: 42px;
+    font-weight: 200;
+}
+.profile-desc {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-desc {
+    width: auto;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-desc:before {
+    content: '';
+    background-color: rgb(255, 255, 255, 0.3);
+    width: 1px;
+    height: 80px;
+    position: absolute;
+    left: 0;
+}
+.box-desc:after {
+    content: '';
+    background-color: #c0c4d5;
+    width: 3px;
+    height: 30px;
+    position: absolute;
+    left: -1px;
+    top: 0;
+}
+.box-desc p {
+    color: #c0c4d6;
+    font-size: 20px;
+    font-weight: 200;
+    padding: 0px 30px;
+}
+.container-player {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    animation-delay: .5s;
+}
+.box-player {
+    background: #02d871 url("../svg/pause.svg") no-repeat center center;
+    background-size: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+}
+.row-player {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 280px;
+    height: 2px;
+}
+.container-redes {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    animation-delay: .7s;
+}
+.redes-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.redes-ul a li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    margin: 0px 15px;
+    position: relative;
+    transition: .3s ease;
+}
+.redes-ul a li:hover {
+    transform: rotate(-45deg);
+    opacity: 0.3;
+}
+.icon-facebook:before {
+    content: '';
+    background: url("../svg/facebook.svg") no-repeat center center;
+    background-size: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.icon-twitter:before {
+    content: '';
+    background: url("../svg/twitter.svg") no-repeat center center;
+    background-size: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.icon-linkedin:before {
+    content: '';
+    background: url("../svg/linkedin.svg") no-repeat center center;
+    background-size: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+.icon-behance:before {
+    content: '';
+    background: url("../svg/behance.svg") no-repeat center center;
+    background-size: 20px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: rotate(-45deg);
+}
