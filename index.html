@@ -37,10 +37,10 @@ src="https://www.facebook.com/tr?id=530829371170728&ev=PageView&noscript=1"
     $(document).ready(function() {
     $("#btnSubmit").click(function(){
         alert("pixel enviado");
-        fbq('track', 'Purchase', {
-value: 9.99,
-currency: 'EUR'
-});
+ fbq('trackCustom', 'EVENTO whats', {
+    dominio: 'murylotoledo.github.io/dev/',
+    pagina: 'PORTIFOLIO GITHUB',
+    fonte: 'MEU GITHUB'});
     }); 
 });
  </script>
